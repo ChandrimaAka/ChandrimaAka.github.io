@@ -1,0 +1,140 @@
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f8ff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #004080;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.8rem;
+  letter-spacing: 2px;
+}
+
+/* Navigation */
+nav {
+  background: #0073e6;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #0059b3;
+}
+
+/* Sections */
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+section h2 {
+  color: #004080;
+  margin-bottom: 15px;
+  font-size: 2rem;
+  border-bottom: 3px solid #0073e6;
+  padding-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+/* Lists */
+ul {
+  list-style: disc inside;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+/* Images */
+img {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Location Map Section Specific */
+#location-map p {
+  text-align: center ;
+  font-size: 1.1rem;
+  color: #555;
+  margin-top: 20px auto;
+  border-radius: 8px;
+  display: block;
+ margin: 0 auto;
+width: 90%;
+ max-width: 700px; 
+border: 2px solid #555; 
+border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  background: #004080;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 60px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.3);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+  
+  nav a {
+    margin: 8px 0;
+  }
+  
+  section {
+    margin: 20px 10px;
+    padding: 15px;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  section h2 {
+    font-size: 1.6rem;
+  }
+}
